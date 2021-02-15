@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Cards/black_joker.png">
+    <link rel="stylesheet" type="text/css" href="mainCSS.css">
+
+    <title>Lucky Mo</title>
+</head>
+<body onload="gameFunction()" id="game">
+<center>
+    <div id="titleContainer">
+<h1 id="gameTitle">Luc<img src="Cards/king_of_clubs.png" width="50px" height="80px">y Mo</h1>
+    </div>
+</center>
+
+<table class="scoreBoard">
+    <tr>
+        <th colspan="2"><h3>Score Board</h3></th>
+    </tr>
+    <tr>
+        <td><h4>Computer</h4></td>
+        <th><h4 id="enemyScore">00</h4></th>
+    </tr>
+    <tr>
+        <td><h4>Player1</h4></td>
+        <th><h4 id="player1Score">00</h4></th>
+    </tr>
+    <tr>
+        <td><h4>Player2</h4></td>
+        <th><h4 id="player2Score">00</h4></th>
+    </tr>
+</table>
+
+
+
+<table>
+    <tr>
+        <center>
+            <h3 id="AICardSum">Computer</h3>
+            <h3 class="AItext">Computer</h3>
+        <span class="AI"><img id="AI1" src="Cards/red_joker.png" width="90px" height="130px"></span>
+        <span class="AI"><img id="AI2" src="Cards/red_joker.png" width="90px" height="130px"></span>
+        <span class="AI"><img id="AI3" src="Cards/red_joker.png" width="90px" height="130px"></span>
+        </center>
+    </tr>
+    <tr>
+        <h3 class="P1text" id="player1">Player1</h3>
+        <br>
+        <h3 class="P1text" id="player1Sum">a</h3>
+        <span class="P1"><img id="Card1" src="Cards/red_joker.png" width="90px" height="130px"></span>
+        <span class="P1"><img id="Card2" src="Cards/red_joker.png" width="90px" height="130px"></span>
+        <span class="P1"><img id="Card3" src="Cards/red_joker.png" width="90px" height="130px"></span>
+        <h3 class="P2text" id="player2">Player2</h3>
+        <br>
+        <h3 class="P2text" id="player2Sum">a</h3>
+        <span class="P2"><img id="Card4" src="Cards/red_joker.png" width="90px" height="130px"></span>
+        <span class="P2"><img id="Card5" src="Cards/red_joker.png" width="90px" height="130px"></span>
+        <span class="P2"><img id="Card6" src="Cards/red_joker.png" width="90px" height="130px"></span>
+    </tr>
+    <tr>
+        <center>
+            <input class="endButton" type="button" value="End" onclick="turnEnd()"/>
+            <p><img id="extraCard" src="Cards/red_joker.png" width="90px" height="130px" onclick="cardDraw()"></p>
+            <h2 id="remainingCards">Cards:40</h2>
+            <span><b><p id="turnMessage">ahahhah</p></b></span>
+        </center>
+    </tr>
+</table>
+
+</body>
+
+<script defer src="Functions.js"></script>
+</html>
